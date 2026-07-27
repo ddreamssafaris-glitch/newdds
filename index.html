@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Distant Dreams Safaris — Experience Kenya, Your Way</title>
+<meta name="description" content="Distant Dreams Safaris — Bespoke Nairobi day trips, transfers, and best-selling African safaris. Experience Kenya, your way." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F8F5EE;
+    --cream-card:#FEFCF6;
+    --ink:#1A1A15;
+    --gray:#6E6D63;
+    --gold:#C89649;
+    --gold-soft:#DDBB86;
+    --olive:#434C3D;
+    --olive-dark:#363F30;
+    --olive-line:#5A6350;
+    --near-black:#14150F;
+    --line:#E4DFD1;
+    --whatsapp:#2F6B4F;
+    --tripadvisor:#00AA6C;
+  }
+  html{scroll-behavior:smooth;}
+  body{background:var(--cream); font-family:'Inter',sans-serif; color:var(--ink);}
+  .font-display{font-family:'Fraunces',serif;}
+  .tracked{letter-spacing:0.14em;}
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  .card-hover{transition:transform .35s ease, box-shadow .35s ease;}
+  .card-hover:hover{transform:translateY(-4px);}
+  .img-zoom img{transition:transform .6s ease;}
+  .img-zoom:hover img{transform:scale(1.06);}
+  .accordion-panel{max-height:0; overflow:hidden; transition:max-height .4s ease;}
+  .snap-row{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; gap:1rem; padding-bottom:.5rem;}
+  .snap-row::-webkit-scrollbar{height:6px;}
+  .snap-row::-webkit-scrollbar-thumb{background:var(--line); border-radius:3px;}
+  .snap-item{scroll-snap-align:center; flex:0 0 85%;}
+  @media(min-width:640px){ .snap-item{flex:0 0 46%;} }
+  @media(min-width:1024px){ .snap-row{display:grid; grid-template-columns:repeat(3,1fr); overflow:visible;} .snap-item{flex:none;} }
+  .float-btn{animation:floatPulse 3.5s ease-in-out infinite;}
+  @keyframes floatPulse{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
+    .reveal{opacity:1; transform:none;}
+  }
+  input[type="radio"], input[type="checkbox"]{accent-color: var(--gold);}
+  button, a{ -webkit-tap-highlight-color: transparent; }
+  ::selection{background:var(--gold-soft);}
+  .star-btn{font-size:22px; line-height:1; cursor:pointer; color:#D8D2C0; transition:color .15s;}
+  .star-btn.active{color:var(--gold);}
+</style>
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<header id="siteHeader" class="sticky top-0 z-40 shadow-sm transition-shadow">
+  <div class="hidden sm:flex items-center justify-end gap-5 px-6 py-2 text-[11.5px]" style="background:var(--near-black); color:#EDEBE3">
+    <a href="mailto:ddreamssafaris@gmail.com" class="flex items-center gap-1.5 hover:opacity-75 transition-opacity">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+      ddreamssafaris@gmail.com
+    </a>
+    <a href="mailto:reservations@distantdreamssafaris.com" class="flex items-center gap-1.5 hover:opacity-75 transition-opacity">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+      reservations@distantdreamssafaris.com
+    </a>
+    <a href="https://wa.me/254789859595" target="_blank" rel="noreferrer" class="flex items-center gap-1.5 hover:opacity-75 transition-opacity" style="color:var(--gold-soft)">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+      +254 789 859 595
+    </a>
+  </div>
+
+  <div class="border-b bg-[var(--cream)]" style="border-color:var(--line)">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2.5">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M14.5 9.5 12 12l-2.5 2.5L12 12l2.5-2.5Z"/></svg>
+        <span>
+          <span class="font-display text-xl leading-none block" style="color:var(--ink)">Distant Dreams</span>
+          <span class="text-[9px] tracked uppercase block" style="color:var(--gray)">Safaris &middot; Kenya</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-[12.5px] font-medium tracked uppercase" style="color:var(--ink)">
+        <a href="#top" class="hover:opacity-60 transition-opacity">Home</a>
+        <a href="#daytrips" class="hover:opacity-60 transition-opacity">Day Trips</a>
+        <a href="#estimator" class="hover:opacity-60 transition-opacity">Price Estimator</a>
+        <a href="#transfers" class="hover:opacity-60 transition-opacity">Transfers</a>
+        <a href="#safaris" class="hover:opacity-60 transition-opacity">Safaris</a>
+        <a href="#reviews" class="hover:opacity-60 transition-opacity">Reviews</a>
+        <a href="#footer" class="hover:opacity-60 transition-opacity">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#estimator" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-[12px] font-semibold tracked uppercase transition-transform hover:-translate-y-0.5" style="background:var(--gold); color:var(--near-black)">
+          Get Pricing
+        </a>
+        <button id="menuBtn" class="lg:hidden p-2.5" aria-label="Menu" style="color:var(--ink)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden px-6 pb-5 flex flex-col gap-4 text-sm tracked uppercase" style="color:var(--ink)">
+      <a href="#top">Home</a>
+      <a href="#daytrips">Day Trips</a>
+      <a href="#estimator">Price Estimator</a>
+      <a href="#transfers">Transfers</a>
+      <a href="#safaris">Safaris</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#footer">Contact</a>
+      <div class="pt-3 border-t space-y-2 text-[12px] normal-case" style="border-color:var(--line); color:var(--gray)">
+        <a href="mailto:ddreamssafaris@gmail.com" class="flex items-center gap-2">ddreamssafaris@gmail.com</a>
+        <a href="mailto:reservations@distantdreamssafaris.com" class="flex items-center gap-2">reservations@distantdreamssafaris.com</a>
+        <a href="https://wa.me/254789859595" target="_blank" rel="noreferrer" class="flex items-center gap-2">+254 789 859 595</a>
+      </div>
+      <a href="#estimator" class="mt-1 text-center px-5 py-3 font-semibold" style="background:var(--gold); color:var(--near-black)">Get Pricing</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative min-h-[85vh] flex items-end">
+  <div class="absolute inset-0 -z-10">
+    <img id="heroImg" src="" alt="Acacia tree at sunset over the savanna" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(20,21,15,0.15) 0%, rgba(20,21,15,0.35) 55%, rgba(20,21,15,0.88) 100%)"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 pb-20 pt-36 w-full reveal">
+    <div class="flex items-center gap-2 text-[12px] tracked uppercase mb-6" style="color:var(--gold-soft)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      Nairobi &middot; Maasai Mara &middot; Amboseli
+    </div>
+    <div class="font-display font-light text-2xl md:text-3xl tracked text-white mb-2">EXPERIENCE</div>
+    <h1 class="font-display italic text-6xl sm:text-7xl md:text-8xl text-white leading-[0.95]">Kenya</h1>
+    <div class="font-display italic text-4xl sm:text-5xl md:text-6xl mt-1" style="color:var(--gold-soft)">your way</div>
+    <p class="text-white/85 max-w-lg mt-6 text-base sm:text-lg">Bespoke Nairobi day trips, point-to-point transfers, and best-selling African safaris — crafted by local guides who know every horizon.</p>
+    <div class="flex flex-wrap gap-4 mt-9">
+      <a href="#estimator" class="px-7 py-3.5 text-sm font-semibold tracked uppercase transition-transform hover:-translate-y-0.5" style="background:var(--gold); color:var(--near-black)">Get a Price</a>
+      <a href="#safaris" class="px-7 py-3.5 text-sm font-semibold tracked uppercase border border-white/50 text-white hover:bg-white/10 transition-colors">View Safaris</a>
+    </div>
+  </div>
+</section>
+<!-- ============ NAIROBI DAY TRIPS GRID ============ -->
+<section id="daytrips" class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--cream)">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M14.5 9.5 12 12l-2.5 2.5L12 12l2.5-2.5Z"/></svg>
+      <span class="w-8 h-px hidden sm:block" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase hidden sm:inline" style="color:var(--gold)">Nairobi Day Trips</span>
+    </div>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl max-w-xl mb-8 reveal" style="color:var(--ink)">Curated escapes from the city.</h2>
+    <div id="escapeGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ DYNAMIC PRICE ESTIMATOR ============ -->
+<section id="estimator" class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--olive)">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <span class="w-8 h-px" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">Dynamic Price Estimator</span>
+    </div>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl max-w-xl mb-3 reveal" style="color:#fff">See your price, instantly.</h2>
+    <p class="max-w-md text-[15px] mb-10 reveal" style="color:rgba(255,255,255,0.7)">Pick a trip, set your group, and apply a promo code if you have one.</p>
+
+    <div class="grid lg:grid-cols-[1.5fr_1fr] gap-8">
+      <div class="space-y-6">
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gold)">Trip</label>
+          <div id="categoryOptions" class="grid sm:grid-cols-3 gap-3"></div>
+        </div>
+        <div id="vehicleWrap" class="hidden">
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gold)">Vehicle</label>
+          <div id="vehicleOptions" class="grid sm:grid-cols-2 gap-3"></div>
+        </div>
+        <div>
+          <label id="optionLabel" class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gold)">Tour Type</label>
+          <div id="tourOptions" class="grid sm:grid-cols-2 gap-3"></div>
+        </div>
+        <div id="entryNoteWrap" class="hidden flex items-start gap-2 p-3.5" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" class="shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <p id="entryNoteText" class="text-xs leading-relaxed" style="color:rgba(255,255,255,0.75)"></p>
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gold)">Travelers</label>
+          <div class="flex items-center gap-4 p-3.5 w-fit" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <button data-trav="-1" class="w-8 h-8 rounded-full flex items-center justify-center text-white" style="border:1px solid var(--olive-line)">&minus;</button>
+            <span id="travelersVal" class="text-white w-5 text-center">2</span>
+            <button data-trav="1" class="w-8 h-8 rounded-full flex items-center justify-center text-white" style="border:1px solid var(--olive-line)">+</button>
+          </div>
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gold)">Promo Code</label>
+          <div id="discountWrap"></div>
+        </div>
+      </div>
+
+      <div class="p-6 h-fit lg:sticky lg:top-28" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+        <div class="text-[11px] tracked uppercase mb-4" style="color:var(--gold)">Estimate</div>
+        <div id="estimateLines" class="space-y-2 text-sm" style="color:rgba(255,255,255,0.8)"></div>
+        <div class="mt-5 pt-5 border-t" style="border-color:var(--olive-line)">
+          <div class="text-[11px] tracked uppercase mb-1" style="color:var(--gold)">Estimated Total</div>
+          <div id="estimateTotal" class="font-display text-3xl text-white">$0</div>
+        </div>
+        <a id="estimatorWaLink" href="#" target="_blank" rel="noreferrer" class="mt-6 w-full flex items-center justify-center gap-2 py-3.5 text-sm font-semibold tracked uppercase" style="background:var(--gold); color:var(--near-black)">
+          Send Inquiry
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </a>
+        <p class="text-xs mt-4 leading-relaxed" style="color:rgba(255,255,255,0.45)">Payments can be made on the day of the tour preferably using Card or Cash. Tips for guides are not included in the fee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ TRANSFER ONLY BOOKING MODULE ============ -->
+<section id="transfers" class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--cream)">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <span class="w-8 h-px" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">Transfer Only Booking</span>
+    </div>
+    <div class="flex items-center gap-2 mb-3 reveal">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-1 .1-1.3.5l-.7.8c-.4.4-.2 1.1.3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.4 5.9c.2.5.9.7 1.3.3l.8-.7c.4-.3.6-.8.5-1.3Z"/></svg>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl" style="color:var(--ink)">Point-to-point transfers.</h2>
+    </div>
+    <p class="max-w-lg text-[15px] mb-10 reveal" style="color:var(--gray)">Just need a ride — airport to hotel, or a custom city drop-off? Book a transfer on its own, no tour required.</p>
+
+    <div class="p-6 sm:p-8" style="background:var(--cream-card); border:1px solid var(--line)">
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Pickup</label>
+          <select id="tPickupType" class="w-full px-3 py-3 text-sm" style="border:1px solid var(--line); background:#fff">
+            <option>Airport</option><option>Hotel</option><option>Residence</option><option>Custom Location</option>
+          </select>
+          <input id="tPickupDetails" placeholder="Terminal, hotel name, or address" class="w-full mt-2 px-3 py-3 text-sm" style="border:1px solid var(--line)" />
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Drop-off</label>
+          <input id="tDropoff" placeholder="Hotel name or address" class="w-full px-3 py-3 text-sm" style="border:1px solid var(--line)" />
+          <p class="text-xs mt-2" style="color:var(--gray)">e.g. Jomo Kenyatta Airport &rarr; Westlands Hotel</p>
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Date</label>
+          <input id="tDate" type="date" class="w-full px-3 py-3 text-sm" style="border:1px solid var(--line)" />
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Time</label>
+          <input id="tTime" type="time" class="w-full px-3 py-3 text-sm" style="border:1px solid var(--line)" />
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Passengers</label>
+          <div class="flex items-center gap-4 p-2.5 w-fit" style="border:1px solid var(--line)">
+            <button data-pax="-1" class="w-8 h-8 rounded-full flex items-center justify-center" style="border:1px solid var(--line)">&minus;</button>
+            <span id="paxVal" class="w-5 text-center">2</span>
+            <button data-pax="1" class="w-8 h-8 rounded-full flex items-center justify-center" style="border:1px solid var(--line)">+</button>
+          </div>
+        </div>
+        <div>
+          <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Preferred Vehicle</label>
+          <select id="tVehicle" class="w-full px-3 py-3 text-sm" style="border:1px solid var(--line); background:#fff">
+            <option>Sedan</option><option>Tour Van</option><option>Land Cruiser</option>
+          </select>
+        </div>
+      </div>
+      <div class="mt-5">
+        <label class="text-[11px] tracked uppercase mb-2 block" style="color:var(--gray)">Notes (optional)</label>
+        <textarea id="tNotes" rows="3" placeholder="Flight number, luggage, special requests..." class="w-full px-3 py-3 text-sm resize-none" style="border:1px solid var(--line)"></textarea>
+      </div>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-6 pt-6 border-t" style="border-color:var(--line)">
+        <p class="text-xs max-w-xs" style="color:var(--gray)">Transfer pricing is confirmed on inquiry based on distance and vehicle.</p>
+        <a id="transferWaLink" href="#" target="_blank" rel="noreferrer" class="flex items-center gap-2 px-6 py-3.5 text-sm font-semibold tracked uppercase opacity-40 pointer-events-none" style="background:var(--gold); color:var(--near-black)">
+          Request Transfer Quote
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-3 p-4 mt-6" style="background:var(--cream-card); border:1px solid var(--line)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" class="shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <p class="text-sm leading-relaxed" style="color:var(--gray)">Payments can be made on the day of the tour preferably using Card or Cash. Tips for guides are not included in the fee.</p>
+    </div>
+  </div>
+</section>
+<!-- ============ THE CHRONICLER: MULTI-DAY SAFARIS ============ -->
+<section id="safaris" class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--cream)">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <span class="w-8 h-px" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">The Chronicler &middot; Multi-Day Safaris</span>
+    </div>
+    <div class="flex flex-wrap items-start justify-between gap-8 mb-10 reveal">
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl max-w-xl" style="color:var(--ink)">Best-selling expeditions into the wild.</h2>
+      <p class="max-w-sm text-[15px] leading-relaxed" style="color:var(--gray)">Five signature routes through Kenya's iconic landscapes. Every itinerary is quoted individually — reach out and we'll tailor it to your dates and party.</p>
+    </div>
+    <div id="safariGrid" class="snap-row"></div>
+  </div>
+</section>
+
+<!-- ============ VISUAL JOURNAL ============ -->
+<section class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--cream)">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <span class="w-8 h-px" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">The Visual Journal</span>
+    </div>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl max-w-xl mb-8 reveal" style="color:var(--ink)">Moments from the expedition.</h2>
+    <div id="galleryGrid" class="grid sm:grid-cols-3 gap-4"></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS & SOCIAL PROOF ============ -->
+<section id="reviews" class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--olive)">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <span class="w-8 h-px" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">Reviews &amp; Social Proof</span>
+    </div>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl max-w-xl mb-10 reveal" style="color:#fff">Travelers' words.</h2>
+
+    <div id="reviewGrid" class="snap-row mb-14"></div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div class="p-6 sm:p-8" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+        <div class="flex items-center gap-2.5 mb-5">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--tripadvisor)" stroke-width="1.6"><circle cx="7" cy="14" r="3.2"/><circle cx="17" cy="14" r="3.2"/><path d="M12 8c-2.5 0-4.5.6-6 1.6M12 8c2.5 0 4.5.6 6 1.6M9 5.5h6"/></svg>
+          <div>
+            <div class="text-white font-semibold text-sm">Distant Dreams Safaris on TripAdvisor</div>
+            <div class="text-white/50 text-xs">@distantdreamssafaris</div>
+          </div>
+        </div>
+        <div id="tripadvisorBody"></div>
+        <a href="https://www.tripadvisor.com/Search?q=Distant%20Dreams%20Safaris" target="_blank" rel="noreferrer"
+          class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 text-[12px] font-semibold tracked uppercase" style="background:var(--tripadvisor); color:white">
+          View on TripAdvisor
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+
+      <div class="p-6 sm:p-8" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+        <div class="text-white font-display text-xl mb-1">Share your experience</div>
+        <p class="text-white/55 text-sm mb-5">Traveled with us? We'd love to hear how it went.</p>
+        <div id="reviewFormArea"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ: GOOD TO KNOW ============ -->
+<section id="faq" class="py-16 md:py-24 px-4 sm:px-6" style="background:var(--cream)">
+  <div class="max-w-3xl mx-auto">
+    <div class="flex items-center gap-3 mb-4 reveal">
+      <span class="w-8 h-px" style="background:var(--gold)"></span>
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">Good to Know</span>
+    </div>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl mb-8 reveal" style="color:var(--ink)">Answers to the questions explorers ask.</h2>
+    <div id="faqList"></div>
+  </div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer id="footer" style="background:var(--near-black); color:#EDEBE3">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-10">
+    <div class="flex flex-wrap items-center justify-between gap-6 pb-12 border-b" style="border-color:#2A2B22">
+      <h3 class="font-display text-2xl sm:text-3xl md:text-4xl max-w-lg">Ready to dream in <span class="italic" style="color:var(--gold)">distant</span> places?</h3>
+      <a href="#estimator" class="px-7 py-3.5 text-sm font-semibold tracked uppercase inline-flex items-center gap-2" style="background:var(--gold); color:var(--near-black)">
+        Start Planning
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 py-12">
+      <div>
+        <div class="flex items-center gap-2.5 mb-3">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#EDEBE3" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M14.5 9.5 12 12l-2.5 2.5L12 12l2.5-2.5Z"/></svg>
+          <span class="font-display text-xl">Distant Dreams Safaris</span>
+        </div>
+        <p class="text-sm text-white/60 leading-relaxed">Bespoke Nairobi day trips, transfers, and multi-day African safaris, crafted by Kenyan guides since 2014.</p>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.instagram.com/distantdreamssafaris/" target="_blank" rel="noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:border-white/60 transition-colors">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EDEBE3" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#EDEBE3"/></svg>
+          </a>
+          <a href="https://www.facebook.com/distantdreamssafaris/" target="_blank" rel="noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:border-white/60 transition-colors">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#EDEBE3" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
+          </a>
+          <a href="https://www.tripadvisor.com/Search?q=Distant%20Dreams%20Safaris" target="_blank" rel="noreferrer" aria-label="TripAdvisor" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:border-white/60 transition-colors">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EDEBE3" stroke-width="1.6"><circle cx="7" cy="14" r="3.2"/><circle cx="17" cy="14" r="3.2"/><path d="M12 8c-2.5 0-4.5.6-6 1.6M12 8c2.5 0 4.5.6 6 1.6M9 5.5h6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="text-[11px] tracked uppercase mb-4" style="color:var(--gold)">Explore</div>
+        <ul class="space-y-2.5 text-sm text-white/75">
+          <li><a href="#daytrips" class="hover:text-white transition-colors">Nairobi Day Trips</a></li>
+          <li><a href="#estimator" class="hover:text-white transition-colors">Price Estimator</a></li>
+          <li><a href="#transfers" class="hover:text-white transition-colors">Transfers</a></li>
+          <li><a href="#safaris" class="hover:text-white transition-colors">Multi-Day Safaris</a></li>
+          <li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-[11px] tracked uppercase mb-4" style="color:var(--gold)">Contact</div>
+        <ul class="space-y-2.5 text-sm text-white/75">
+          <li class="flex items-start gap-2"><svg width="14" height="14" class="mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> ddreamssafaris@gmail.com</li>
+          <li class="flex items-start gap-2"><svg width="14" height="14" class="mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> reservations@distantdreamssafaris.com</li>
+          <li class="flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Westlands, Nairobi, Kenya</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-[11px] tracked uppercase mb-4" style="color:var(--gold)">Direct Line</div>
+        <a href="https://wa.me/254789859595" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white" style="background:var(--whatsapp)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <p class="text-xs text-white/45 mt-3">We typically reply within the hour.</p>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t flex flex-wrap items-center justify-between gap-4 text-xs text-white/45" style="border-color:#2A2B22">
+      <span>&copy; <span id="year"></span> Distant Dreams Safaris. All rights reserved.</span>
+      <a href="#" class="hover:text-white/70 transition-colors">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#estimator" id="floatBook" class="float-btn fixed bottom-5 right-5 z-30 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center text-center text-[10px] sm:text-[11px] font-semibold tracked uppercase leading-tight shadow-lg" style="background:var(--gold); color:var(--near-black)">Book<br/>Now</a>
+
+<div id="inquireOverlay" class="hidden fixed inset-0 z-50 items-end sm:items-center justify-center p-0 sm:p-6" style="background:rgba(20,21,15,0.7)">
+  <div class="w-full sm:max-w-md p-6 sm:p-7" style="background:var(--cream-card)">
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[11px] tracked uppercase" style="color:var(--gold)">Inquire</span>
+      <button id="inquireClose" class="text-xl leading-none" style="color:var(--gray)">&times;</button>
+    </div>
+    <h3 id="inquireTitle" class="font-display text-2xl mb-1" style="color:var(--ink)"></h3>
+    <p id="inquireSubtitle" class="text-sm mb-6" style="color:var(--gray)"></p>
+    <div class="space-y-3">
+      <a id="inquireEmailBtn" href="#" class="w-full flex items-center justify-center gap-2 py-3.5 text-sm font-semibold tracked uppercase" style="background:var(--ink); color:white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        Email Us
+      </a>
+      <a id="inquireWaBtn" href="#" target="_blank" rel="noreferrer" class="w-full flex items-center justify-center gap-2 py-3.5 text-sm font-semibold tracked uppercase" style="background:var(--whatsapp); color:white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <p class="text-xs mt-5 leading-relaxed" style="color:var(--gray)">We typically reply within the hour. Final pricing is confirmed once we know your dates and party size.</p>
+  </div>
+</div>
+<script>
+/* ===================================================================
+   CONTACT + BUSINESS LOGIC CONFIG
+=================================================================== */
+const CONTACT = {
+  emailBooking: "ddreamssafaris@gmail.com",
+  emailReservations: "reservations@distantdreamssafaris.com",
+  phoneWA: "254789859595",
+};
+const PAYMENT_NOTE = "Payments can be made on the day of the tour preferably using Card or Cash. Tips for guides are not included in the fee.";
+
+const PRICING = {
+  city: {
+    id: "city", name: "Exploring Nairobi as a Local (City Tour)", kind: "simple",
+    options: [{ id: "shared", label: "Shared / Group", price: 40 }, { id: "private", label: "Private Tour", price: 45 }],
+    entryNote: "Entry fees for KICC ($4 USD) and Memorial Park ($2 USD) are paid directly by clients on-site — not included above.",
+  },
+  giraffe: {
+    id: "giraffe", name: "Giraffe Centre & Other Day Destinations", kind: "simple",
+    options: [{ id: "single", label: "Single Traveler", price: 45 }, { id: "sharing", label: "Sharing / Group", price: 40 }],
+  },
+  nnp: {
+    id: "nnp", name: "Nairobi National Park Game Drive", kind: "vehicle",
+    vehicles: [
+      { id: "cruiser", label: "Land Cruiser", options: [{ id: "single", label: "Single", price: 180 }, { id: "sharing", label: "Sharing", price: 200 }] },
+      { id: "van", label: "Tour Van", options: [{ id: "single", label: "Single", price: 140 }, { id: "sharing", label: "Sharing", price: 160 }] },
+    ],
+  },
+};
+
+const DISCOUNT_CODES = {
+  KARIBU10: { type: "percent", value: 10, label: "10% off" },
+  ASANTE5: { type: "flat", value: 5, label: "$5 off" },
+};
+
+const DESTINATIONS_FOR_GRID = [
+  { categoryId: "city", title: "Exploring Nairobi as a Local", tag: "City Tour", from: 40, blurb: "A 4-hour walking tour through Nairobi's history and culture — from the August 7th Memorial Park to KICC, Parliament, and a local lunch at K'Osewe.",
+    stops: ["August 7th Memorial Park (Old American Embassy)", "Kenyatta International Convention Centre (KICC) rooftop", "Parliament Buildings & the Jomo Kenyatta Mausoleum", "Holy Family Basilica", "Lunch at K'Osewe (Ranalo Foods) on Moi Avenue"] },
+  { categoryId: "giraffe", title: "Giraffe Centre", tag: "Day Destination", from: 40, imgKey: "giraffe", blurb: "Hand-feed endangered Rothschild giraffes at this beloved conservation sanctuary." },
+  { categoryId: "giraffe", title: "Karen Blixen Museum", tag: "Day Destination", from: 40, imgKey: "karen", blurb: "Step into the story of 'Out of Africa' at the author's restored coffee plantation." },
+  { categoryId: "giraffe", title: "Oloolua Nature Trail", tag: "Day Destination", from: 40, imgKey: "oloolua", blurb: "A guided rainforest walk past waterfalls, caves, and a canopy of butterflies." },
+  { categoryId: "giraffe", title: "Nairobi National Museum", tag: "Day Destination", from: 40, imgKey: "museum", blurb: "Kenya's natural and cultural history, from early hominids to modern art." },
+  { categoryId: "giraffe", title: "Nairobi Gallery", tag: "Day Destination", from: 40, imgKey: "gallery", blurb: "The historic Bomas building, now home to regional art and artifacts." },
+  { categoryId: "giraffe", title: "Bomas of Kenya", tag: "Day Destination", from: 40, imgKey: "bomas", blurb: "Traditional homesteads and live dance performances from Kenya's many communities." },
+  { categoryId: "nnp", title: "Nairobi National Park", tag: "Game Drive", from: 140, imgKey: "park", blurb: "Lion, rhino, and giraffe against the city skyline — minutes from downtown." },
+];
+
+// Real itineraries extracted from uploaded documents. Per business rule,
+// no explicit prices are shown here even where the source document had
+// one — every card routes to "Inquire for Quote" instead.
+const SAFARIS = [
+  { id: "southern-kenya", name: "8-Day Southern Kenya Wilderness Explorer", tagline: "Chyulu Hills to Amboseli, chasing the red elephants of Tsavo.", length: "8 Days / 7 Nights",
+    itinerary: [
+      "Day 1 — Arrival & Chyulu Hills Escape: pickup from the Taveta border, drive into the volcanic Chyulu Hills, overnight at Severin Safari Camp.",
+      "Day 2 — Tsavo West: Rhino Sanctuary & Mzima Springs: a game drive to the Rhino Sanctuary and the crystal-clear Mzima Springs, home to hippos and crocodiles.",
+      "Day 3 — Tsavo East: Vast Plains & Red Elephants: transition to Tsavo East's famous \"red elephants,\" checking into Man Eaters Camp on the Tsavo River.",
+      "Day 4 — Tsavo East: Full Day of Discovery: game drives through Aruba Dam and beyond, tracking lion, cheetah, and buffalo.",
+      "Day 5 — Taita Hills: Wildlife Sanctuary & Historic Lodge: the stilted Sarova Salt Lick Game Lodge overlooking a floodlit waterhole.",
+      "Day 6 — Amboseli: Kilimanjaro's Shadow: settle into Sentrim Amboseli Camp for an afternoon game drive beneath Africa's highest peak.",
+      "Day 7 — Amboseli: Giants & Views: a sunrise game drive for the clearest views of Kilimanjaro and the resident elephant herds.",
+      "Day 8 — Amboseli to Kisongo: a final breakfast and departure, marking the end of the safari.",
+    ],
+    includes: ["Accommodation with meals as specified", "All activities on the itinerary", "Land Cruiser with pop-up roof for game viewing", "Park entry & conservation fees", "Professional English-speaking driver-guide"] },
+  { id: "kenya-unveiled", name: "Kenya Unveiled Grand Safari", tagline: "Mara, Nakuru, Naivasha, and Amboseli — Kenya's greatest hits.", length: "9 Days / 8 Nights",
+    itinerary: [
+      "Day 1 — Arrival in Nairobi: a late-evening arrival at JKIA and transfer to the EKA Hotel.",
+      "Day 2 — Nairobi to Maasai Mara: a scenic drive to Little Zebra River Camp, then your first game drive at golden hour.",
+      "Day 3 — Maasai Mara: a full day of game drives deep into the reserve, from elephants to big cats.",
+      "Day 4 — Lake Nakuru: an afternoon game drive at Sarova Lion Hills, spotting flamingos and both black and white rhino.",
+      "Day 5 — Lake Naivasha: check into Enashipai Resort, with lunch followed by a serene afternoon boat ride on the lake.",
+      "Day 6 — Lake Naivasha & Hell's Gate: a bicycle tour through Hell's Gate's volcanic gorges and cliffs.",
+      "Day 7 — Amboseli: a scenic drive to Kibo Tented Camp and an afternoon game drive beneath Kilimanjaro.",
+      "Day 8 — Amboseli: extensive game drives plus a visit to a Maasai cultural village.",
+      "Day 9 — Amboseli to Nairobi: a farewell lunch at Court Yard Utamaduni Restaurant, then the Giraffe Centre before your onward flight.",
+    ],
+    includes: ["Accommodation with meals as specified", "All activities on the itinerary", "Land Cruiser with pop-up roof for game viewing", "Park entry & conservation fees", "Professional English-speaking driver-guide"] },
+  { id: "mount-kenya-luxury", name: "Luxury Escape to the Slopes of Mount Kenya", tagline: "Fly in to Meru National Park and Elsa Kopje Lodge.", length: "4 Nights / 5 Days",
+    itinerary: [
+      "Day 1 — Arrival in Nairobi: transfer to the Ole Sereni Hotel for an overnight stay.",
+      "Day 2 — Fly to Meru: a scenic morning flight from Wilson Airport with views of Mount Kenya, then an afternoon game drive and dinner at Elsa Kopje Lodge.",
+      "Day 3 — Full Day in Meru: morning and afternoon game drives through the park once home to Elsa the lioness of \"Born Free.\"",
+      "Day 4 — Departure: a final breakfast, flight back to Nairobi, and onward transfer to JKIA.",
+    ],
+    includes: ["Return airport transfer", "Return Air Kenya flights", "Scheduled, shared game drives on 4x4", "Sundowners", "House wines, beers, spirits & soft drinks", "Laundry service"] },
+  { id: "naivasha-escape", name: "Nairobi & Lake Naivasha Escape", tagline: "City culture, Rift Valley views, and Hell's Gate on two wheels.", length: "3 Days / 2 Nights",
+    itinerary: [
+      "Day 1 — Nairobi's Urban Gems & Evening Sparkle: farm-to-table breakfast at Cultiva Farm Kenya, feeding giraffes at the Giraffe Centre, Kazuri Beads Factory, the Maasai Market, and dinner at The Carnivore.",
+      "Day 2 — A Scenic Escape to Lakeside Serenity: a stop at the Great Rift Valley Viewpoint en route to a lakeside retreat at The Lake House at Sungura.",
+      "Day 3 — Lake Naivasha's Natural Wonders: a bike (or walking) safari through Hell's Gate National Park and the red cliffs of Ol Karia Gorge.",
+    ],
+    includes: [] },
+];
+
+const SEED_REVIEWS = [
+  { name: "Amara O.", place: "Lagos, Nigeria", rating: 5, quote: "Our Mara sundowner is a memory I'll keep for life. The driver-guide knew exactly where the pride was resting." },
+  { name: "Tom & Ellie", place: "Bristol, UK", rating: 5, quote: "The day-trip pricing was crystal clear upfront — no surprises when we picked Giraffe Centre and Karen Blixen." },
+  { name: "Sana R.", place: "Dubai, UAE", rating: 5, quote: "Flamingos at Nakuru at sunrise, and the vehicle was spotless with real AC. Booking on WhatsApp was fast too." },
+];
+
+const TRIPADVISOR = { rating: null, reviewCount: null };
+
+const FAQS = [
+  { q: "Where do you pick up guests?", a: "We offer complimentary pickup from any hotel, residence, or Jomo Kenyatta International Airport within Nairobi. For multi-day safaris, departure is from your Nairobi accommodation at dawn — exact timing confirmed the evening prior." },
+  { q: "What payment methods do you accept?", a: "Bank transfer, M-Pesa, and major cards via a secure payment link, or Card/Cash on the day of the tour. A deposit confirms multi-day safari dates." },
+  { q: "What is your cancellation policy?", a: "Free cancellation up to 48 hours before a day trip, and 7 days before a multi-day safari. Deposits are otherwise non-refundable." },
+  { q: "Are your safaris suitable for children?", a: "Yes — children are welcome on every itinerary. Early-morning game drives can be adjusted for younger travelers on request." },
+];
+
+const currency = (n) => "$" + Math.round(n).toLocaleString();
+</script>
+<script>
+/* ===================================================================
+   STATE
+=================================================================== */
+let photos = { hero: "", destinations: {}, safaris: {}, gallery: [] };
+
+const estimator = {
+  categoryId: "city",
+  optionId: "shared",
+  vehicleId: "cruiser",
+  travelers: 2,
+  discountCode: null,
+  discountError: "",
+};
+
+let submittedReviews = [];
+let reviewDraftRating = 5;
+
+/* ===================================================================
+   INIT
+=================================================================== */
+fetch("photos.json")
+  .then((r) => r.json())
+  .then((data) => { photos = data; init(); })
+  .catch(() => init());
+
+function init() {
+  document.getElementById("heroImg").src = photos.hero || "";
+  document.getElementById("year").textContent = new Date().getFullYear();
+  renderEscapeGrid();
+  renderEstimator();
+  renderSafariGrid();
+  renderGallery();
+  renderReviews();
+  renderTripAdvisor();
+  renderReviewForm();
+  renderFAQ();
+  bindGlobalEvents();
+  setupReveal();
+}
+
+/* ===================================================================
+   DAY TRIPS GRID
+=================================================================== */
+function renderEscapeGrid() {
+  document.getElementById("escapeGrid").innerHTML = DESTINATIONS_FOR_GRID.map((card) => {
+    const price = PRICING[card.categoryId];
+    const img = photos.destinations[card.imgKey || card.categoryId] || photos.destinations.city || "";
+    return `
+    <div class="reveal card-hover flex flex-col overflow-hidden" style="background:var(--cream-card); border:1px solid var(--line)">
+      <div class="relative h-40 img-zoom overflow-hidden">
+        <img src="${img}" alt="${card.title}" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-5 flex flex-col flex-1">
+        <span class="inline-block w-fit px-2.5 py-1 text-[10px] tracked uppercase mb-3" style="background:var(--olive-dark); color:#fff">${card.tag}</span>
+        <h3 class="font-display text-xl mb-2" style="color:var(--ink)">${card.title}</h3>
+        <p class="text-sm leading-relaxed flex-1" style="color:var(--gray)">${card.blurb}</p>
+        ${price.entryNote ? `<p class="text-xs mt-3 leading-relaxed" style="color:var(--gold)">${price.entryNote}</p>` : ""}
+        ${card.stops ? `
+        <button data-stops-toggle="${card.title}" class="text-[11px] tracked uppercase font-semibold flex items-center gap-1.5 mt-3" style="color:var(--gold)">
+          View the route
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div data-stops-panel="${card.title}" class="hidden mt-2 space-y-1.5">
+          ${card.stops.map((s, i) => `<div class="flex items-start gap-2 text-xs" style="color:var(--gray)"><span class="font-mono shrink-0" style="color:var(--gold)">${i + 1}.</span>${s}</div>`).join("")}
+          ${card.categoryId === "city" && photos.cityTourStops ? `
+          <div class="flex gap-1.5 pt-2 overflow-x-auto">
+            ${photos.cityTourStops.map((src) => `<img src="${src}" class="w-16 h-16 object-cover shrink-0" alt="City tour stop" />`).join("")}
+          </div>` : ""}
+        </div>` : ""}
+        <div class="flex items-center justify-between mt-5 pt-4 border-t" style="border-color:var(--line)">
+          <div>
+            <div class="text-[10px] tracked uppercase" style="color:var(--gray)">From</div>
+            <div class="font-display text-2xl" style="color:var(--ink)">${currency(card.from)}<span class="text-xs">/person</span></div>
+          </div>
+          <button data-select-category="${card.categoryId}" class="flex items-center gap-1.5 px-4 py-2.5 text-[12px] font-semibold tracked uppercase" style="background:var(--gold); color:var(--near-black)">
+            Get Pricing
+          </button>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+
+  document.querySelectorAll("[data-stops-toggle]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const key = btn.getAttribute("data-stops-toggle");
+      document.querySelector(`[data-stops-panel="${key}"]`).classList.toggle("hidden");
+    });
+  });
+
+  document.querySelectorAll("[data-select-category]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      changeCategory(btn.getAttribute("data-select-category"));
+      document.getElementById("estimator").scrollIntoView({ behavior: "smooth" });
+    });
+  });
+}
+</script>
+<script>
+/* ===================================================================
+   DYNAMIC PRICE ESTIMATOR
+=================================================================== */
+function activeOptions() {
+  const cat = PRICING[estimator.categoryId];
+  if (cat.kind === "vehicle") {
+    const v = cat.vehicles.find((x) => x.id === estimator.vehicleId) || cat.vehicles[0];
+    return v.options;
+  }
+  return cat.options;
+}
+
+function computeTotal() {
+  const opts = activeOptions();
+  const selected = opts.find((o) => o.id === estimator.optionId) || opts[0];
+  const subtotal = (selected ? selected.price : 0) * estimator.travelers;
+  let discount = 0;
+  if (estimator.discountCode && DISCOUNT_CODES[estimator.discountCode]) {
+    const code = DISCOUNT_CODES[estimator.discountCode];
+    discount = code.type === "percent" ? subtotal * (code.value / 100) : Math.min(code.value, subtotal);
+  }
+  return { subtotal, discount, total: Math.max(0, subtotal - discount), pricePerPerson: selected ? selected.price : 0, selectedLabel: selected ? selected.label : "" };
+}
+
+function changeCategory(id) {
+  estimator.categoryId = id;
+  const cat = PRICING[id];
+  if (cat.kind === "vehicle") {
+    estimator.vehicleId = cat.vehicles[0].id;
+    estimator.optionId = cat.vehicles[0].options[0].id;
+  } else {
+    estimator.optionId = cat.options[0].id;
+  }
+  renderEstimator();
+}
+
+function renderEstimator() {
+  const cat = PRICING[estimator.categoryId];
+
+  document.getElementById("categoryOptions").innerHTML = Object.values(PRICING).map((c) => {
+    const active = estimator.categoryId === c.id;
+    return `<button data-cat="${c.id}" class="text-left p-4 transition-colors" style="background:${active ? "var(--olive-dark)" : "transparent"}; border:1.5px solid ${active ? "var(--gold)" : "var(--olive-line)"}">
+      <span class="text-sm block text-white">${c.name}</span>
+    </button>`;
+  }).join("");
+  document.querySelectorAll("[data-cat]").forEach((b) => b.addEventListener("click", () => changeCategory(b.getAttribute("data-cat"))));
+
+  const vehicleWrap = document.getElementById("vehicleWrap");
+  if (cat.kind === "vehicle") {
+    vehicleWrap.classList.remove("hidden");
+    document.getElementById("vehicleOptions").innerHTML = cat.vehicles.map((v) => {
+      const active = estimator.vehicleId === v.id;
+      return `<button data-vehicle="${v.id}" class="flex items-center gap-2 p-3.5 transition-colors" style="background:${active ? "var(--olive-dark)" : "transparent"}; border:1.5px solid ${active ? "var(--gold)" : "var(--olive-line)"}">
+        <span class="text-sm text-white">${v.label}</span>
+      </button>`;
+    }).join("");
+    document.querySelectorAll("[data-vehicle]").forEach((b) => b.addEventListener("click", () => {
+      estimator.vehicleId = b.getAttribute("data-vehicle");
+      const v = cat.vehicles.find((x) => x.id === estimator.vehicleId);
+      estimator.optionId = v.options[0].id;
+      renderEstimator();
+    }));
+  } else {
+    vehicleWrap.classList.add("hidden");
+  }
+
+  document.getElementById("optionLabel").textContent = cat.kind === "vehicle" ? "Group Type" : "Tour Type";
+  document.getElementById("tourOptions").innerHTML = activeOptions().map((o) => {
+    const active = estimator.optionId === o.id;
+    return `<label class="flex items-center justify-between p-3.5 cursor-pointer" style="background:${active ? "var(--olive-dark)" : "transparent"}; border:1.5px solid ${active ? "var(--gold)" : "var(--olive-line)"}">
+      <span class="flex items-center gap-2">
+        <input type="radio" name="tourOption" data-option="${o.id}" ${active ? "checked" : ""} />
+        <span class="text-sm text-white">${o.label}</span>
+      </span>
+      <span class="text-sm font-semibold" style="color:var(--gold)">${currency(o.price)}/pp</span>
+    </label>`;
+  }).join("");
+  document.querySelectorAll("[data-option]").forEach((r) => r.addEventListener("change", () => {
+    estimator.optionId = r.getAttribute("data-option");
+    renderEstimator();
+  }));
+
+  const entryWrap = document.getElementById("entryNoteWrap");
+  if (cat.entryNote) {
+    entryWrap.classList.remove("hidden");
+    document.getElementById("entryNoteText").textContent = cat.entryNote;
+  } else {
+    entryWrap.classList.add("hidden");
+  }
+
+  document.getElementById("travelersVal").textContent = estimator.travelers;
+
+  const dWrap = document.getElementById("discountWrap");
+  if (estimator.discountCode) {
+    dWrap.innerHTML = `<div class="flex items-center justify-between p-3.5" style="background:var(--olive-dark); border:1.5px solid var(--gold)">
+      <span class="flex items-center gap-2 text-sm text-white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        ${estimator.discountCode} applied — ${DISCOUNT_CODES[estimator.discountCode].label}
+      </span>
+      <button id="removeDiscount" class="text-xs text-white/60 hover:text-white">Remove</button>
+    </div>`;
+    document.getElementById("removeDiscount").addEventListener("click", () => { estimator.discountCode = null; estimator.discountError = ""; renderEstimator(); });
+  } else {
+    dWrap.innerHTML = `
+      <div class="flex gap-2">
+        <div class="flex items-center gap-2 px-3 flex-1" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="m20.59 13.41-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82Z"/></svg>
+          <input id="discountInput" placeholder="Enter promo code" class="bg-transparent py-3 text-sm text-white placeholder-white/40 outline-none w-full" />
+        </div>
+        <button id="applyDiscount" class="px-4 text-[12px] font-semibold tracked uppercase" style="background:var(--gold); color:var(--near-black)">Apply</button>
+      </div>
+      ${estimator.discountError ? `<p class="text-xs mt-1.5" style="color:#E2A0A0">${estimator.discountError}</p>` : ""}`;
+    document.getElementById("applyDiscount").addEventListener("click", () => {
+      const code = document.getElementById("discountInput").value.trim().toUpperCase();
+      if (!code) return;
+      if (DISCOUNT_CODES[code]) { estimator.discountCode = code; estimator.discountError = ""; }
+      else { estimator.discountCode = null; estimator.discountError = "That code isn't valid. Please check and try again."; }
+      renderEstimator();
+    });
+  }
+
+  const totals = computeTotal();
+  document.getElementById("estimateLines").innerHTML = `
+    <div class="flex justify-between"><span>${totals.selectedLabel}</span><span>${currency(totals.pricePerPerson)}/pp</span></div>
+    <div class="flex justify-between"><span>Travelers</span><span>&times; ${estimator.travelers}</span></div>
+    <div class="flex justify-between pt-2 border-t" style="border-color:var(--olive-line)"><span>Subtotal</span><span>${currency(totals.subtotal)}</span></div>
+    ${totals.discount > 0 ? `<div class="flex justify-between" style="color:var(--gold-soft)"><span>Discount</span><span>-${currency(totals.discount)}</span></div>` : ""}`;
+  document.getElementById("estimateTotal").textContent = currency(totals.total);
+  document.getElementById("estimatorWaLink").href = "https://wa.me/" + CONTACT.phoneWA + "?text=" + encodeURIComponent(buildEstimatorMessage(cat, totals));
+}
+
+function buildEstimatorMessage(cat, totals) {
+  const lines = [
+    "Hi Distant Dreams Safaris! I'd like a quote for a Nairobi day trip:",
+    "",
+    "Trip: " + cat.name,
+    cat.kind === "vehicle" ? "Vehicle: " + cat.vehicles.find((v) => v.id === estimator.vehicleId).label : null,
+    "Option: " + totals.selectedLabel + " (" + currency(totals.pricePerPerson) + "/person)",
+    "Travelers: " + estimator.travelers,
+    estimator.discountCode ? "Discount code: " + estimator.discountCode + " (" + DISCOUNT_CODES[estimator.discountCode].label + ")" : null,
+    "",
+    "Subtotal: " + currency(totals.subtotal),
+    totals.discount > 0 ? "Discount: -" + currency(totals.discount) : null,
+    "Estimated total: " + currency(totals.total),
+    "", PAYMENT_NOTE,
+  ].filter(Boolean);
+  return lines.join("\n");
+}
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-trav]");
+  if (btn) {
+    const dir = parseInt(btn.getAttribute("data-trav"), 10);
+    estimator.travelers = Math.max(1, estimator.travelers + dir);
+    renderEstimator();
+  }
+});
+</script>
+<script>
+/* ===================================================================
+   TRANSFER ONLY BOOKING MODULE
+=================================================================== */
+let paxCount = 2;
+function bindTransferForm() {
+  document.getElementById("paxVal").textContent = paxCount;
+  document.querySelectorAll("[data-pax]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      paxCount = Math.max(1, paxCount + parseInt(btn.getAttribute("data-pax"), 10));
+      document.getElementById("paxVal").textContent = paxCount;
+      updateTransferLink();
+    });
+  });
+  ["tPickupType", "tPickupDetails", "tDropoff", "tDate", "tTime", "tVehicle", "tNotes"].forEach((id) => {
+    document.getElementById(id).addEventListener("input", updateTransferLink);
+    document.getElementById(id).addEventListener("change", updateTransferLink);
+  });
+  updateTransferLink();
+}
+
+function updateTransferLink() {
+  const dropoff = document.getElementById("tDropoff").value.trim();
+  const msg = [
+    "Hi Distant Dreams Safaris! I'd like a quote for a transfer-only booking:",
+    "",
+    "Pickup: " + document.getElementById("tPickupType").value + (document.getElementById("tPickupDetails").value ? " — " + document.getElementById("tPickupDetails").value : ""),
+    "Drop-off: " + (dropoff || "To be confirmed"),
+    "Date: " + (document.getElementById("tDate").value || "To be confirmed") + (document.getElementById("tTime").value ? " at " + document.getElementById("tTime").value : ""),
+    "Passengers: " + paxCount,
+    "Preferred vehicle: " + document.getElementById("tVehicle").value,
+    document.getElementById("tNotes").value ? "Notes: " + document.getElementById("tNotes").value : null,
+    "", PAYMENT_NOTE,
+  ].filter(Boolean).join("\n");
+
+  const link = document.getElementById("transferWaLink");
+  link.href = "https://wa.me/" + CONTACT.phoneWA + "?text=" + encodeURIComponent(msg);
+  if (dropoff) link.classList.remove("opacity-40", "pointer-events-none");
+  else link.classList.add("opacity-40", "pointer-events-none");
+}
+
+/* ===================================================================
+   THE CHRONICLER — MULTI-DAY SAFARIS (no pricing, inquire modal)
+=================================================================== */
+function renderSafariGrid() {
+  document.getElementById("safariGrid").innerHTML = SAFARIS.map((s) => `
+    <div class="reveal snap-item card-hover img-zoom flex flex-col overflow-hidden" style="background:var(--cream-card); border:1px solid var(--line)">
+      <div class="relative h-52 overflow-hidden">
+        <img src="${(photos.safaris[s.id] && photos.safaris[s.id].cover) || ""}" alt="${s.name}" class="w-full h-full object-cover" />
+        <div class="absolute inset-0" style="background:linear-gradient(180deg, transparent 45%, rgba(20,21,15,0.85))"></div>
+        <div class="absolute bottom-0 p-4">
+          <div class="text-[10px] tracked uppercase mb-1" style="color:var(--gold-soft)">${s.length}</div>
+          <div class="font-display text-xl text-white">${s.name}</div>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col flex-1">
+        <p class="text-sm mb-3" style="color:var(--gray)">${s.tagline}</p>
+        <div class="space-y-1.5 mb-4">
+          ${s.includes.map((i) => `<div class="flex items-center gap-2 text-xs" style="color:var(--gray)">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>${i}</div>`).join("")}
+        </div>
+        <button data-itinerary-toggle="${s.id}" class="text-[11px] tracked uppercase font-semibold flex items-center gap-1.5 mb-2" style="color:var(--gold)">
+          View itinerary
+          <svg class="toggle-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div data-itinerary-panel="${s.id}" class="hidden space-y-1.5 mb-4 pb-4 border-b" style="border-color:var(--line)">
+          ${s.itinerary.map((d) => `<div class="text-xs leading-relaxed" style="color:var(--gray)">${d}</div>`).join("")}
+        </div>
+        <div class="mt-auto flex items-center justify-between gap-3 pt-2">
+          <span class="text-sm font-semibold" style="color:var(--olive)">Inquire for Quote</span>
+          <button data-inquire="${s.id}" class="flex items-center gap-1.5 px-4 py-2.5 text-[12px] font-semibold tracked uppercase whitespace-nowrap" style="background:var(--gold); color:var(--near-black)">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>`).join("");
+
+  document.querySelectorAll("[data-itinerary-toggle]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-itinerary-toggle");
+      const panel = document.querySelector(`[data-itinerary-panel="${id}"]`);
+      panel.classList.toggle("hidden");
+    });
+  });
+  document.querySelectorAll("[data-inquire]").forEach((btn) => {
+    btn.addEventListener("click", () => openInquireModal(btn.getAttribute("data-inquire")));
+  });
+}
+
+function openInquireModal(safariId) {
+  const s = SAFARIS.find((x) => x.id === safariId);
+  document.getElementById("inquireTitle").textContent = s.name;
+  document.getElementById("inquireSubtitle").textContent = s.length + " — " + s.tagline;
+
+  const msg = "Hi Distant Dreams Safaris! I'd like to inquire about the " + s.name + " (" + s.length + "). Please send me a quote and available dates.";
+  document.getElementById("inquireEmailBtn").href = "mailto:" + CONTACT.emailBooking + "," + CONTACT.emailReservations + "?subject=" + encodeURIComponent("Safari Inquiry: " + s.name) + "&body=" + encodeURIComponent(msg);
+  document.getElementById("inquireWaBtn").href = "https://wa.me/" + CONTACT.phoneWA + "?text=" + encodeURIComponent(msg);
+
+  const overlay = document.getElementById("inquireOverlay");
+  overlay.classList.remove("hidden");
+  overlay.classList.add("flex");
+}
+function closeInquireModal() {
+  const overlay = document.getElementById("inquireOverlay");
+  overlay.classList.add("hidden");
+  overlay.classList.remove("flex");
+}
+</script>
+<script>
+/* ===================================================================
+   GALLERY
+=================================================================== */
+function renderGallery() {
+  document.getElementById("galleryGrid").innerHTML = (photos.gallery || []).map((src, i) => `
+    <div class="reveal img-zoom overflow-hidden h-64 sm:h-72 cursor-pointer" data-gallery-img="${i}">
+      <img src="${src}" alt="Gallery photo ${i + 1}" class="w-full h-full object-cover" />
+    </div>`).join("");
+  document.querySelectorAll("[data-gallery-img]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const overlay = document.createElement("div");
+      overlay.className = "fixed inset-0 z-50 flex items-center justify-center p-6";
+      overlay.style.background = "rgba(20,21,15,0.92)";
+      overlay.innerHTML = `<img src="${el.querySelector("img").src}" class="max-h-full max-w-full object-contain" />`;
+      overlay.addEventListener("click", () => overlay.remove());
+      document.body.appendChild(overlay);
+    });
+  });
+}
+
+/* ===================================================================
+   REVIEWS: DISPLAY + TRIPADVISOR + SUBMISSION FORM
+=================================================================== */
+function starRow(n) {
+  return Array.from({ length: 5 }).map((_, i) => `
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="${i < n ? "var(--gold)" : "none"}" stroke="var(--gold)" stroke-width="1.6"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`).join("");
+}
+
+function renderReviews() {
+  const all = [...submittedReviews, ...SEED_REVIEWS];
+  document.getElementById("reviewGrid").innerHTML = all.map((r) => `
+    <div class="reveal snap-item p-6" style="background:var(--olive-dark); border:1px solid var(--olive-line)">
+      <div class="flex gap-0.5 mb-3">${starRow(r.rating)}</div>
+      <p class="text-sm text-white/85 mb-4">"${r.quote}"</p>
+      <div class="text-sm font-semibold text-white">${r.name}</div>
+      <div class="text-xs" style="color:var(--gold-soft)">${r.place}</div>
+      ${r.pending ? `<span class="inline-block mt-2 text-[10px] tracked uppercase px-2 py-0.5" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.6)">Pending Approval</span>` : ""}
+    </div>`).join("");
+}
+
+function renderTripAdvisor() {
+  const body = document.getElementById("tripadvisorBody");
+  if (TRIPADVISOR.rating) {
+    body.innerHTML = `
+      <div class="flex items-center gap-3 mb-2">
+        <span class="font-display text-3xl text-white">${TRIPADVISOR.rating}</span>
+        <div class="flex gap-0.5">${starRow(Math.round(TRIPADVISOR.rating))}</div>
+      </div>
+      <p class="text-white/55 text-sm">Based on ${TRIPADVISOR.reviewCount} traveler reviews</p>`;
+  } else {
+    body.innerHTML = `<p class="text-white/55 text-sm leading-relaxed">Live rating coming soon — connect your TripAdvisor listing to display it here automatically.</p>`;
+  }
+}
+
+function renderReviewForm() {
+  const area = document.getElementById("reviewFormArea");
+  area.innerHTML = `
+    <div id="reviewSuccessMsg" class="hidden mb-4 p-3 text-sm" style="background:rgba(200,150,73,0.15); color:var(--gold-soft); border:1px solid var(--gold)">
+      Thank you! Your review has been sent for approval.
+    </div>
+    <div class="space-y-3">
+      <input id="rvName" placeholder="Your name" class="w-full px-3 py-3 text-sm text-white placeholder-white/40" style="background:var(--olive); border:1px solid var(--olive-line)" />
+      <input id="rvPlace" placeholder="City, Country" class="w-full px-3 py-3 text-sm text-white placeholder-white/40" style="background:var(--olive); border:1px solid var(--olive-line)" />
+      <select id="rvTrip" class="w-full px-3 py-3 text-sm text-white" style="background:var(--olive); border:1px solid var(--olive-line)">
+        <option value="">Which trip? (optional)</option>
+        ${SAFARIS.map((s) => `<option value="${s.name}">${s.name}</option>`).join("")}
+        <option value="Nairobi Day Trip">Nairobi Day Trip</option>
+        <option value="Airport Transfer">Airport Transfer</option>
+      </select>
+      <div>
+        <label class="text-[11px] tracked uppercase mb-1.5 block" style="color:var(--gold)">Rating</label>
+        <div id="rvStars" class="flex gap-1"></div>
+      </div>
+      <textarea id="rvText" rows="4" placeholder="Tell us about your trip..." class="w-full px-3 py-3 text-sm text-white placeholder-white/40 resize-none" style="background:var(--olive); border:1px solid var(--olive-line)"></textarea>
+      <button id="rvSubmit" class="w-full py-3.5 text-sm font-semibold tracked uppercase" style="background:var(--gold); color:var(--near-black)">Submit Review</button>
+    </div>`;
+
+  renderStarPicker();
+  document.getElementById("rvSubmit").addEventListener("click", submitReview);
+}
+
+function renderStarPicker() {
+  const wrap = document.getElementById("rvStars");
+  wrap.innerHTML = Array.from({ length: 5 }).map((_, i) => `<span data-star="${i + 1}" class="star-btn ${i < reviewDraftRating ? "active" : ""}">&#9733;</span>`).join("");
+  wrap.querySelectorAll("[data-star]").forEach((el) => {
+    el.addEventListener("click", () => {
+      reviewDraftRating = parseInt(el.getAttribute("data-star"), 10);
+      renderStarPicker();
+    });
+  });
+}
+
+function submitReview() {
+  const name = document.getElementById("rvName").value.trim();
+  const place = document.getElementById("rvPlace").value.trim();
+  const trip = document.getElementById("rvTrip").value;
+  const text = document.getElementById("rvText").value.trim();
+
+  if (!name || !text) {
+    alert("Please add your name and a short review before submitting.");
+    return;
+  }
+
+  const review = { name, place: place || "Verified Traveler", rating: reviewDraftRating, quote: text, pending: true };
+  submittedReviews = [review, ...submittedReviews];
+  renderReviews();
+
+  const mailBody = [
+    "New review submitted via the website:",
+    "",
+    "Name: " + name,
+    "Location: " + (place || "—"),
+    "Trip: " + (trip || "—"),
+    "Rating: " + reviewDraftRating + "/5",
+    "Review: " + text,
+  ].join("\n");
+  window.open("mailto:" + CONTACT.emailBooking + "?subject=" + encodeURIComponent("New Website Review — " + name) + "&body=" + encodeURIComponent(mailBody), "_blank");
+
+  document.getElementById("reviewSuccessMsg").classList.remove("hidden");
+  document.getElementById("rvName").value = "";
+  document.getElementById("rvPlace").value = "";
+  document.getElementById("rvTrip").value = "";
+  document.getElementById("rvText").value = "";
+  reviewDraftRating = 5;
+  renderStarPicker();
+}
+</script>
+<script>
+/* ===================================================================
+   FAQ
+=================================================================== */
+function renderFAQ() {
+  document.getElementById("faqList").innerHTML = FAQS.map((f, i) => `
+    <div class="border-b py-5" style="border-color:var(--line)">
+      <button data-faq="${i}" class="w-full flex items-center justify-between text-left gap-4">
+        <span class="font-display text-lg sm:text-xl" style="color:${i === 0 ? "var(--gold)" : "var(--ink)"}">${f.q}</span>
+        <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style="border:1px solid var(--line); color:var(--gray)">${i === 0 ? "&minus;" : "+"}</span>
+      </button>
+      <div class="accordion-panel" style="max-height:${i === 0 ? "160px" : "0"}">
+        <p class="text-sm pt-3 leading-relaxed" style="color:var(--gray)">${f.a}</p>
+      </div>
+    </div>`).join("");
+
+  document.querySelectorAll("[data-faq]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const panel = btn.nextElementSibling;
+      const isOpen = panel.style.maxHeight !== "0px" && panel.style.maxHeight !== "";
+      document.querySelectorAll("#faqList .accordion-panel").forEach((p) => { p.style.maxHeight = "0"; });
+      document.querySelectorAll("#faqList [data-faq] span:first-child").forEach((s) => s.style.color = "var(--ink)");
+      document.querySelectorAll("#faqList [data-faq] span:last-child").forEach((s) => s.textContent = "+");
+      if (!isOpen) {
+        panel.style.maxHeight = "160px";
+        btn.querySelector("span:first-child").style.color = "var(--gold)";
+        btn.querySelector("span:last-child").textContent = "\u2212";
+      }
+    });
+  });
+}
+
+/* ===================================================================
+   GLOBAL EVENTS + SCROLL REVEAL
+=================================================================== */
+function bindGlobalEvents() {
+  document.getElementById("menuBtn").addEventListener("click", () => document.getElementById("mobileMenu").classList.toggle("hidden"));
+  window.addEventListener("scroll", () => {
+    document.getElementById("siteHeader").style.boxShadow = window.scrollY > 10 ? "0 4px 16px rgba(20,21,15,0.08)" : "none";
+  });
+  document.getElementById("inquireClose").addEventListener("click", closeInquireModal);
+  document.getElementById("inquireOverlay").addEventListener("click", (e) => { if (e.target.id === "inquireOverlay") closeInquireModal(); });
+  bindTransferForm();
+}
+
+function setupReveal() {
+  const obs = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("in"); }), { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+  const mo = new MutationObserver(() => document.querySelectorAll(".reveal:not(.in)").forEach((el) => obs.observe(el)));
+  mo.observe(document.body, { childList: true, subtree: true });
+}
+</script>
+</body>
+</html>

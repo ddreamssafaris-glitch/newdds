@@ -1,0 +1,43 @@
+{
+  "hero": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80",
+  "destinations": {
+    "city": "images/daytrips/city-tour/image3.jpg",
+    "karen": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80",
+    "giraffe": "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=800&q=80",
+    "oloolua": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+    "museum": "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&w=800&q=80&sat=-10",
+    "gallery": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80&sat=-10",
+    "park": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
+    "bomas": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80&sat=10"
+  },
+  "cityTourStops": [
+    "images/daytrips/city-tour/image1.jpg",
+    "images/daytrips/city-tour/image3.jpg",
+    "images/daytrips/city-tour/image5.jpg",
+    "images/daytrips/city-tour/image6.jpg",
+    "images/daytrips/city-tour/image7.jpg"
+  ],
+  "safaris": {
+    "southern-kenya": {
+      "cover": "images/safaris/8-day-southern-kenya/image3.jpg",
+      "gallery": ["images/safaris/8-day-southern-kenya/image1.jpg", "images/safaris/8-day-southern-kenya/image2.jpg", "images/safaris/8-day-southern-kenya/image3.jpg", "images/safaris/8-day-southern-kenya/image4.jpg", "images/safaris/8-day-southern-kenya/image5.jpg", "images/safaris/8-day-southern-kenya/image6.jpg", "images/safaris/8-day-southern-kenya/image7.jpg"]
+    },
+    "kenya-unveiled": {
+      "cover": "images/safaris/kenya-unveiled/image3.jpg",
+      "gallery": ["images/safaris/kenya-unveiled/image1.jpg", "images/safaris/kenya-unveiled/image2.jpg", "images/safaris/kenya-unveiled/image3.jpg", "images/safaris/kenya-unveiled/image4.jpg", "images/safaris/kenya-unveiled/image5.jpg", "images/safaris/kenya-unveiled/image6.jpg", "images/safaris/kenya-unveiled/image7.jpg", "images/safaris/kenya-unveiled/image8.jpg"]
+    },
+    "mount-kenya-luxury": {
+      "cover": "images/safaris/mount-kenya-luxury/image3.jpg",
+      "gallery": ["images/safaris/mount-kenya-luxury/image1.jpg", "images/safaris/mount-kenya-luxury/image2.jpg", "images/safaris/mount-kenya-luxury/image3.jpg", "images/safaris/mount-kenya-luxury/image4.jpg"]
+    },
+    "naivasha-escape": {
+      "cover": "images/safaris/naivasha-escape/image5.jpg",
+      "gallery": ["images/safaris/naivasha-escape/image1.jpg", "images/safaris/naivasha-escape/image2.jpg", "images/safaris/naivasha-escape/image3.jpg", "images/safaris/naivasha-escape/image4.jpg", "images/safaris/naivasha-escape/image5.jpg", "images/safaris/naivasha-escape/image6.jpg", "images/safaris/naivasha-escape/image7.jpg"]
+    }
+  },
+  "gallery": [
+    "images/safaris/8-day-southern-kenya/image3.jpg",
+    "images/safaris/kenya-unveiled/image8.jpg",
+    "images/safaris/mount-kenya-luxury/image4.jpg"
+  ]
+}
